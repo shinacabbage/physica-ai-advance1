@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pixi/
+wandb/
+kadai_ws/build/
+kadai_ws/install/
+kadai_ws/log/
+# GitHub rejects files larger than 100 MB. This checkpoint weight is about 160 MB.
+checkpoints/train/demoRobot_teleop_act/model.safetensors
