@@ -1,6 +1,6 @@
-dataset_root: "/home/ubuntu/dataset/lerobot_dataset/demoRobot_teleop"
+dataset_root: "../dataset/lerobot_dataset/demoRobot_teleop"
 repo_id: "demoRobot_teleop"
-output_directory: "/home/ubuntu/checkpoints/train/demoRobot_teleop_act"
+output_directory: "../checkpoints/train/demoRobot_teleop_act"
 config_path: "configs/car_features.py"
 
 device: "cpu"

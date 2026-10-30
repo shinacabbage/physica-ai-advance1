@@ -38,7 +38,7 @@ features = {
 
 robot_type = "diff_drive"
 repo_id = "demoRobot_teleop"
-root = "/home/ubuntu/dataset/lerobot_dataset/demoRobot_teleop"
+root = "../dataset/lerobot_dataset/demoRobot_teleop"
 task_name = "drive_to_goal"
 
 

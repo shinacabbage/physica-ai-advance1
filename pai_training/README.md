@@ -27,7 +27,7 @@ pixi run convert
 ```
 Visualize the dataset
 ```bash
-pixi run python scripts/visualize_dataset.py --root /home/ubuntu/dataset/lerobot_dataset/crane_plus_pekori --repo-id crane_plus_pekori --episode-index 1 --mode distant
+pixi run python scripts/visualize_dataset.py --root ../dataset/lerobot_dataset/demoRobot_teleop --repo-id demoRobot_teleop --episode-index 1 --mode distant
 # Copy the output from above command and paste it in your *local* web browser (it may take a second to load)
 ```
 Train the policy
@@ -39,14 +39,14 @@ pixi run train
 Run inference.  
 It takes the model path as an argument.
 ```bash
-pixi run infer --model-path /home/ubuntu/checkpoints/train/crane_plus_pekori_act
+pixi run infer --model-path ../checkpoints/train/demoRobot_teleop_act
 ```
 Debug policy.  
 This script evaluates the policy on the specified dataset offline.  
 This is useful to check if the policy is working as expected.  
 You can separate the dataset into training and evaluation sets to evaluate the policy in more detail.
 ```bash
-pixi run debug-policy --dataset-root /home/ubuntu/dataset/lerobot_dataset/crane_plus_pekori --repo-id crane_plus_pekori --policy-path /home/ubuntu/checkpoints/train/crane_plus_pekori_act --episode-index 1
+pixi run debug-policy --dataset-root ../dataset/lerobot_dataset/demoRobot_teleop --repo-id demoRobot_teleop --policy-path ../checkpoints/train/demoRobot_teleop_act --episode-index 1
 ```
 
 ## Pixi help
